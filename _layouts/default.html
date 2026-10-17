@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} – Meine Seite</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  {% include header.html %}
+
+  <div class="rahmen">
+    {% include sidebar.html %}
+
+    <main>
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>
